@@ -1,0 +1,152 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+   <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical" >
+
+    <TextView
+        android:id="@+id/opt_percentage"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Percentage"
+        android:textAppearance="@android:style/TextAppearance.Medium" />
+
+    <CheckBox
+        android:id="@+id/checkPercentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+	</LinearLayout>
+	
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical" >
+
+    <TextView
+        android:id="@+id/opt_year"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Yearly"
+        android:textAppearance="@android:style/TextAppearance.Medium" />
+
+    <CheckBox
+        android:id="@+id/checkYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+	</LinearLayout>
+	
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical" >
+
+    <TextView
+        android:id="@+id/opt_month"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Monthly"
+        android:textAppearance="@android:style/TextAppearance.Medium" />
+
+    <CheckBox
+        android:id="@+id/checkMonth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+	</LinearLayout>
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical" >
+
+    <TextView
+        android:id="@+id/opt_week"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Weekly"
+        android:textAppearance="@android:style/TextAppearance.Medium" />
+
+    <CheckBox
+        android:id="@+id/checkWeek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+	</LinearLayout>
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical" >
+
+    <TextView
+        android:id="@+id/opt_4weeks"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="4 Weeks"
+        android:textAppearance="@android:style/TextAppearance.Medium" />
+
+    <CheckBox
+        android:id="@+id/check4weeks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+	</LinearLayout>
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical" >
+
+    <TextView
+        android:id="@+id/opt_2weeks"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="2 Weeks"
+        android:textAppearance="@android:style/TextAppearance.Medium" />
+
+    <CheckBox
+        android:id="@+id/check2weeks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+	</LinearLayout>
+	
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical" >
+
+    <TextView
+        android:id="@+id/opt_day"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Daily"
+        android:textAppearance="@android:style/TextAppearance.Medium" />
+
+    <CheckBox
+        android:id="@+id/checkDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+	</LinearLayout>
+	
+   
+
+</LinearLayout> 

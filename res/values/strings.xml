@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TaxMan Calculator</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">UK Tax Calculator</string>
+    <string name="taxyear_prompt">2012/2013</string>
+    <string name="age_prompt">under 65</string>
+    <string name="voucher_prompt">Month</string>
+    <string name="gross_prompt">Yearly</string>
+    <string name="title_activity_guide">Guide</string>
+    <string name="question_mark">Guide"</string>
+	<string name="tax_year">Tax Year"</string>
+	<string name="is_married">Married"</string>
+	<string name="is_blind">"Blind"</string>
+	<string name="is_noni">"I pay no NI"</string>
+	<string name="student_loan">"Include student loan?"</string>
+	<string name="age">"Age"</string>
+	<string name="allowances">"Any Allowances / -Deductions"</string>
+	<string name="zero">"0"</string>
+	<string name="tax_code">"Tax code (this is optional)"</string>
+	<string name="tax_code_hint">"tax code"</string>
+	<string name="pension_contrib">"Pension Contribution\n(% or amount)"</string>
+	<string name="childcare">"Childcare\nVouchers"</string>
+	<string name="childcare2">"Did you sign up before April 6 2011?"</string>
+	<string name="per">"per"</string>
+	<string name="gross">"Gross	"</string>
+	<string name="wage_is">"wage is"</string>
+	<string name="calculate">"Calculate"</string>
+	<string name="choose_columns">"Choose Columns"</string>
+	<string name="wage_summary">"Wage Summary"</string>
+	<string name="percent">"%"</string>
+	<string name="yearly">"Yearly"</string>
+	<string name="monthly">"Monthly"</string>
+	<string name="week">"Week"</string>
+	<string name="two_weeks">"2 Weeks"</string>
+	<string name="four_weeks">"4 Weeks"</string>
+	<string name="daily">"Daily"</string>
+	
+</resources>

@@ -1,0 +1,416 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" 
+     android:layout_height="fill_parent" 
+     android:layout_width="fill_parent"
+     android:scrollbars="vertical"
+     >
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+   <LinearLayout
+       xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:gravity="center_vertical"
+       android:orientation="horizontal" 
+       android:background="#E7E7E7">
+
+    <ImageButton 
+        android:id="@+id/qTaxYear"
+        android:layout_width="20dip"
+  		android:layout_height="20dip"
+  		android:padding="1dip"
+  		android:contentDescription="@string/question_mark"
+  		android:src="@drawable/q"
+        />
+    <TextView
+        android:id="@+id/taxYear"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="10dip"
+        android:text="@string/tax_year"
+        android:textAppearance="@android:style/TextAppearance.Medium" />
+
+    <Spinner
+        android:id="@+id/spinnerTY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:entries="@array/TaxYearsArray"
+        android:prompt="@string/taxyear_prompt"/>
+
+	</LinearLayout>
+	
+   <LinearLayout
+       xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:gravity="center_vertical"
+       android:orientation="horizontal" 
+       android:background="#FFFFFF">
+
+    <ImageButton 
+        android:id="@+id/qMStatus"
+        android:layout_width="20dip"
+  		android:layout_height="20dip"
+  		android:padding="1dip"
+  		android:contentDescription="@string/question_mark"
+  		android:src="@drawable/q"
+        />
+    
+    <CheckBox 
+        android:id="@+id/checkMarried"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <TextView
+        android:id="@+id/isMarried"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:layout_marginLeft="2dip"
+        android:text="@string/is_married"
+         />
+
+    <CheckBox 
+        android:id="@+id/checkBlind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <TextView
+        android:id="@+id/isBlind"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="2dip"
+        android:text="@string/is_blind"
+        />
+    
+    <CheckBox 
+        android:id="@+id/checkNONI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <TextView
+        android:id="@+id/isNONI"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:layout_marginLeft="2dip"
+        android:text="@string/is_noni"
+        />
+
+	</LinearLayout>
+      <LinearLayout
+       xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:gravity="center_vertical"
+       android:orientation="horizontal" 
+       android:background="#3399CC">
+
+    <ImageButton 
+        android:id="@+id/qStudentLoad"
+        android:layout_width="20dip"
+  		android:layout_height="20dip"
+  		android:padding="1dip"
+  		android:contentDescription="@string/question_mark"
+  		android:src="@drawable/q"
+        />
+    <TextView
+        android:id="@+id/student"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="10dip"
+        android:text="@string/student_loan" />
+
+    <CheckBox 
+        android:id="@+id/checkSL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+	</LinearLayout>
+   
+    <LinearLayout
+       xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:gravity="center_vertical"
+       android:orientation="horizontal" 
+       android:background="#FFFFFF">
+
+    <ImageButton 
+        android:id="@+id/qAge"
+        android:layout_width="20dip"
+  		android:layout_height="20dip"
+  		android:padding="1dip"
+  		android:contentDescription="@string/question_mark"
+  		android:src="@drawable/q"
+        />
+    <TextView
+        android:id="@+id/age"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="10dip"
+        android:text="@string/age" />
+
+    <Spinner
+        android:id="@+id/spinnerAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:entries="@array/ageArray"
+        android:prompt="@string/age_prompt"/>
+
+	</LinearLayout>
+	
+    <LinearLayout
+       xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:gravity="center_vertical"
+       android:orientation="horizontal" 
+       android:background="#E7E7E7">
+
+    <ImageButton 
+        android:id="@+id/qAllowances"
+        android:layout_width="20dip"
+  		android:layout_height="20dip"
+  		android:padding="1dip"
+  		android:contentDescription="@string/question_mark"
+  		android:src="@drawable/q"
+        />
+    <TextView
+        android:id="@+id/allowances"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="10dip"
+        android:text="@string/allowances" />
+
+    <EditText
+        android:id="@+id/textDeduction"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content" 
+		android:gravity="right"
+        android:hint="@string/zero"/>
+	</LinearLayout>
+	
+    <LinearLayout
+       xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:gravity="center_vertical"
+       android:orientation="horizontal" 
+       android:background="#FFFFFF">
+
+    <ImageButton 
+        android:id="@+id/qTaxCode"
+        android:layout_width="20dip"
+  		android:layout_height="20dip"
+  		android:padding="1dip"
+  		android:contentDescription="@string/question_mark"
+  		android:src="@drawable/q"
+        />
+    <TextView
+        android:id="@+id/taxCode"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="10dip"
+        android:text="@string/tax_code" />
+
+    <EditText
+        android:id="@+id/textTaxCode"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content" 
+		android:gravity="left"
+        android:hint="@string/tax_code_hint"/>
+	</LinearLayout>
+    
+     <LinearLayout
+       xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:gravity="center_vertical"
+       android:orientation="horizontal" 
+       android:background="#333333">
+
+    <ImageButton 
+        android:id="@+id/qPension"
+        android:layout_width="20dip"
+  		android:layout_height="20dip"
+  		android:padding="1dip"
+  		android:contentDescription="@string/question_mark"
+  		android:src="@drawable/q"
+        />
+    <TextView
+        android:id="@+id/pension_contrib"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="10dip"
+        android:textColor="#FFFFFF"
+        android:text="@string/pension_contrib" />
+
+    <EditText
+        android:id="@+id/textPension"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content" 
+		android:gravity="right"
+        android:hint="@string/zero"/>
+	</LinearLayout>
+	
+    <LinearLayout
+       xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:gravity="center_vertical"
+       android:orientation="horizontal" 
+       android:background="#994488">
+
+    <ImageButton 
+        android:id="@+id/qVouchers"
+        android:layout_width="20dip"
+  		android:layout_height="20dip"
+  		android:padding="1dip"
+  		android:contentDescription="@string/question_mark"
+  		android:src="@drawable/q"
+        />
+    <TextView
+        android:id="@+id/vouchers"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="10dip"
+        android:textColor="#FFFFFF"
+        android:text="@string/childcare" />
+
+    <EditText
+        android:id="@+id/textVoucher"
+        android:layout_width="50dip"
+        android:layout_height="wrap_content" 
+		android:gravity="right"
+        android:hint="@string/zero"/>
+     <TextView
+        android:id="@+id/per"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dip"
+        android:textColor="#FFFFFF"
+        android:layout_weight="0.5"
+        android:text="@string/per" />
+      <Spinner
+        android:id="@+id/spinnerVoucher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:entries="@array/VoucherArray"
+        android:prompt="@string/voucher_prompt"/>
+	</LinearLayout>   
+	
+    <LinearLayout
+       xmlns:android="http://schemas.android.com/apk/res/android"
+       android:id="@+id/voucherHidden"
+      
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:gravity="center_vertical"
+       android:orientation="horizontal" 
+       android:background="#994488">
+
+    <ImageButton 
+        android:id="@+id/qVouchers2"
+        android:layout_width="20dip"
+  		android:layout_height="20dip"
+  		android:padding="1dip"
+  		android:contentDescription="@string/question_mark"
+  		android:src="@drawable/q"
+        />
+    <TextView
+        android:id="@+id/vouchers2"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="10dip"
+        android:textColor="#FFFFFF"
+        android:text="@string/childcare2" />
+
+     <CheckBox 
+        android:id="@+id/checkVoucher2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+	</LinearLayout> 
+	
+     <LinearLayout
+       xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:gravity="center_vertical"
+       android:orientation="horizontal" 
+       android:background="#FFCC33">
+
+    <ImageButton 
+        android:id="@+id/qGross"
+        android:layout_width="20dip"
+  		android:layout_height="20dip"
+  		android:padding="1dip"
+  		android:contentDescription="@string/question_mark"
+  		android:src="@drawable/q"
+        />
+    <TextView
+        android:id="@+id/gross"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="10dip"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:text="@string/gross" />
+	 <Spinner
+        android:id="@+id/spinnerGross"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:entries="@array/GrossArray"
+        android:prompt="@string/gross_prompt"/>
+    
+     <TextView
+        android:id="@+id/wageis"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dip"
+        android:textColor="#000000"
+        android:layout_weight="1"
+        android:textStyle="bold"
+        android:text="@string/wage_is" />
+     
+     <EditText
+        android:id="@+id/textGross"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content" 
+		android:gravity="right"
+        android:hint="@string/zero"/>
+     
+	</LinearLayout>     
+	   
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:background="#5CAF57" >
+	
+    <Button 
+        android:id="@+id/calcButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/calculate"
+        android:gravity="center"
+        android:padding="10dip"
+        />
+	</LinearLayout> 
+</LinearLayout> 
+</ScrollView>
